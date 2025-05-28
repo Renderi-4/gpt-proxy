@@ -15,7 +15,9 @@ app.post('/save', async (req, res) => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(req.body),
     });
+
     const text = await response.text();
+    console.log('Google Response:', text); // <--- log Google response
     res.send({ result: text });
   } catch (error) {
     res.status(500).send({ error: error.toString() });
