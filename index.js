@@ -2,7 +2,7 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxN-cvpGSRsHvWwlXsUaRU1ZnvsD1xHhtCVaD-hvyJ3zseJpJNxJjee0Aw_-b3_dx1M/exec';
 
