@@ -1,4 +1,5 @@
 // index.js
+console.log("Proxy gestart – commit test");
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
